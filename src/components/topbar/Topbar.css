@@ -17,6 +17,16 @@
     border: peachpuff solid 1px;
 }
 
+.to-search, .profile {
+  color: peachpuff;
+}
+
+.profile {
+  margin-left: 10px;
+  padding-right: 10px;
+  border-right: 2px solid peachpuff;
+}
+
 .topbar-profile,
 .search-input,
 .to-search,
@@ -45,7 +55,7 @@
 img{
     position: relative;
     left: -2000px;
-    filter: drop-shadow(peachpuff 2000px 0);
+    filter: drop-shadow(2000px 0 peachpuff);
 }
 
 .blog-name {

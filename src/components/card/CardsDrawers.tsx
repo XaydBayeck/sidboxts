@@ -13,7 +13,7 @@ export default function CardsDrawers<T extends Cardt.Content>({
   let cardsHTML = cards.map(
     ({ title, content, date, tags }: Cardt.Props<T>, i: number) => {
       return (
-        <Card title={title} content={content} date={date} tags={tags} key={i} />
+        <Card title={title} content={content} date={date} tags={tags} tkey={i} key={i} />
       );
     }
   );

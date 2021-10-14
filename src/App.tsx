@@ -4,6 +4,7 @@ import "./App.css";
 import Topbar from "./components/topbar/Topbar";
 import CardsDrawers from "./components/card/CardsDrawers";
 import blogs from "./resources/blogs.json";
+import Titlebar from './components/titlebar/Titlebar';
 
 let nblogs = blogs.map((blog) => {
   let newBlog = {
@@ -14,7 +15,7 @@ let nblogs = blogs.map((blog) => {
         return blog.content.str;
       },
     },
-    key: {},
+    tkey: {},
   };
   return newBlog;
 });
@@ -25,6 +26,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Topbar blogName="Sid's blog"></Topbar>
+        <Titlebar blogName="Sid's Blog" links={["bilibili", "github"]}></Titlebar>
         <CardsDrawers cards={nblogs} />
       </header>
     </div>

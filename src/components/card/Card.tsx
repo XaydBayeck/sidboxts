@@ -10,7 +10,7 @@ export interface Props<T extends Content> {
   content: T;
   date: Date;
   tags: string[];
-  key: any;
+  tkey: any;
 }
 
 interface Date {
@@ -28,7 +28,7 @@ export default function Card<T extends Content>({
   content,
   date,
   tags,
-  key,
+  tkey,
 }: Props<T>) {
   let tagsHTML = tags.map((tag: string, i: number) => {
     return (
@@ -40,7 +40,7 @@ export default function Card<T extends Content>({
   });
 
   return (
-    <div className="card" key={key}>
+    <div className="card" key={tkey}>
       <div className="title">{title}</div>
       <div className="content">{content.converToText()}</div>
       <div className="properties">
