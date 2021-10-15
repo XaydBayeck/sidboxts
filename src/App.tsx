@@ -1,24 +1,11 @@
 // import logo from './logo.svg';
 import "./App.css";
 import Topbar from "./components/topbar/Topbar";
-import CardsDrawers from "./components/card/CardsDrawers";
-import blogs from "./resources/blogs.json";
 import Titlebar from './components/titlebar/Titlebar';
 import HomeTitle from './components/titlebar/HomeTitle'
-
-let nblogs = blogs.map((blog) => {
-  let newBlog = {
-    ...blog,
-    content: {
-      ...blog.content,
-      converToText: () => {
-        return blog.content.str;
-      },
-    },
-    tkey: {},
-  };
-  return newBlog;
-});
+import Home from './components/home/Home'
+import { Route, Switch, useParams } from "react-router-dom";
+import ArticleTitle, { TitleProps } from "./components/articleTitle/ArticleTitle";
 
 let links = [
   {
@@ -38,12 +25,33 @@ function App() {
       <header className="App-header">
         <Topbar></Topbar>
         <Titlebar>
-          <HomeTitle blogName="Sid's Blog" links={links}></HomeTitle>
+          <Switch>
+            <Route exact path='/'>
+              <HomeTitle blogName="Sid's Blog" links={links}></HomeTitle>
+            </Route>
+            <Route path='/Home'>
+              <HomeTitle blogName="Sid's Blog" links={links}></HomeTitle>
+            </Route>
+            <Route path='/blog/:title'>
+              <ToArticleTitle />
+            </Route>
+          </Switch>
         </Titlebar>
-        <CardsDrawers cards={nblogs} />
+        <Home />
       </header>
     </div>
   );
 }
 
 export default App;
+
+function ToArticleTitle() {
+
+  return (
+    <ArticleTitle title={useParams<{ title: string }>().title} date={{
+      year: 2021,
+      month: 10,
+      day: 10
+    }} tags={["test", "blog", "test"]}></ArticleTitle>
+  );
+}

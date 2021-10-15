@@ -1,8 +1,12 @@
-import * as React from "react";
 import "./Card.css";
+import { Link } from 'react-router-dom';
 
 export interface Content {
-  converToText: () => string;
+  provideText: () => string;
+  provideImg?: () => {
+    src: string,
+    alt: string,
+  };
 }
 
 export interface Props<T extends Content> {
@@ -34,19 +38,34 @@ export default function Card<T extends Content>({
     return (
       <div className="tag" key={i}>
         <span className="tag-icon"></span>
-        <span className="tag-text">{tag}</span>
+        <Link to={'/Category/' + tag} className="tag-text">{tag}</Link>
       </div>
     );
   });
 
+  let imgHtml;
+
+  if (content.provideImg === undefined) { imgHtml = <div /> }
+  else {
+    let { src, alt } = content.provideImg();
+    imgHtml = (
+      <div className="content">
+        <img src={src} alt={alt} />
+      </div>
+    )
+  }
+
   return (
     <div className="card" key={tkey}>
-      <div className="title">{title}</div>
-      <div className="content">{content.converToText()}</div>
-      <div className="properties">
-        <div className="date">{showDate(date)}</div>
-        <div className="tags">{tagsHTML}</div>
-      </div>
+      <Link to={'/blog/' + title}>
+        <div className="title">{title}</div>
+        {imgHtml}
+        <div className="content">{content.provideText()}</div>
+        <div className="properties">
+          <div className="date">{showDate(date)}</div>
+          <div className="tags">{tagsHTML}</div>
+        </div>
+      </Link>
     </div>
   );
 }

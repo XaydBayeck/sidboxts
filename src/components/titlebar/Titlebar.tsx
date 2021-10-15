@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { NavLink } from 'react-router-dom';
 import './Titlebar.css'
 
 export interface Props {
@@ -11,10 +12,10 @@ export default function Titlebar({ children }: Props) {
             {children}
             <div className="nav-bar">
                 <nav>
-                    <a href="#">Home</a>
-                    <a href="#">Category</a>
-                    <a href="#">Time Line</a>
-                    <a href="#">About</a>
+                    <NavLink to="/Home">Home</NavLink>
+                    <NavLink to="/Category">Category</NavLink>
+                    <NavLink to="/TimeLine">Time Line</NavLink>
+                    <NavLink to="/About">About</NavLink>
                 </nav>
             </div>
         </div>

@@ -8,12 +8,24 @@
   padding: 10px;
   color: antiquewhite;
   box-shadow: 10px 10px 2px 1px rgba(61, 117, 139, 0.801);
+  cursor: pointer;
+  transition: box-shadow 1s, background-color 1s;
+}
+
+.card > a {
+  text-decoration: none;
+  color: antiquewhite;
+}
+
+.card:hover {
+  box-shadow: none;
+  background-color: rgba(93, 152, 175, 1);
 }
 
 .content {
     font-size: .9em;
     max-width: 400px;
-    margin: 20px 0px 20px 0px;
+    margin: 20px 10px 20px 10px;
     text-align: start;
 }
 
@@ -33,6 +45,7 @@
 .tags {
     display: flex;
     flex-direction: row;
+    margin-right: 4px;
 }
 
 .tag {
@@ -43,4 +56,18 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.date {
+  margin-left: 5px;
+}
+
+.tag-text {
+  color: antiquewhite;
+  text-decoration: none;
+}
+
+.tag-text:hover {
+  background-color: antiquewhite;
+  color: rgba(93, 152, 175, 1);
 }

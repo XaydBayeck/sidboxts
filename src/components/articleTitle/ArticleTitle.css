@@ -1,0 +1,16 @@
+.article-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: peachpuff;
+}
+
+.title-text {
+    font-size: 4em;
+    margin-bottom: 40px;
+}
+
+.title-properties {
+    font-size: 1em;
+}
