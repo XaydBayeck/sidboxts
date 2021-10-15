@@ -6,6 +6,7 @@ import HomeTitle from './components/titlebar/HomeTitle'
 import Home from './components/home/Home'
 import { Route, Switch, useParams } from "react-router-dom";
 import ArticleTitle, { TitleProps } from "./components/articleTitle/ArticleTitle";
+import BlogView from "./components/blogView/BlogView";
 
 let links = [
   {
@@ -20,6 +21,7 @@ let links = [
 
 // <img src={logo} className="App-logo" alt="logo" />
 function App() {
+
   return (
     <div className="App">
       <header className="App-header">
@@ -37,7 +39,17 @@ function App() {
             </Route>
           </Switch>
         </Titlebar>
-        <Home />
+        <Switch>
+          <Route exact path='/'>
+            <Home />
+          </Route>
+          <Route path='/Home'>
+            <Home />
+          </Route>
+          <Route path='/blog/:title'>
+            <ToBlogView />
+          </Route>
+        </Switch>
       </header>
     </div>
   );
@@ -54,4 +66,10 @@ function ToArticleTitle() {
       day: 10
     }} tags={["test", "blog", "test"]}></ArticleTitle>
   );
+}
+
+
+function ToBlogView() {
+  let name = useParams<{ title: string }>().title;
+  return <BlogView name={name} />
 }

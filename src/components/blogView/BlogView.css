@@ -1,0 +1,8 @@
+.blog-view {
+    text-align: start;
+    max-width: 80%;
+    margin: 50px 25% 100px 25%;
+    padding: 10px 2% 20px 2%;
+    background-color: rgba(93, 152, 175, 0.801);
+    border-radius: 32px;
+}

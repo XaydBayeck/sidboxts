@@ -1,5 +1,18 @@
 [
   {
+    "title": "SidBoxts",
+    "content": {
+      "str": "想自己从零搭建一个自己的博客（从零是指不使用Hexo之类的东西直接建站），顺带学习相关的框架编码等知识。选择了Typescript + React + GitHub Pages 的方案。实际上最终目标是用rust来实现前后端，后端使用Rocket，前端使用yew.rs框架。"
+    },
+    "date": {
+      "year": 2021,
+      "month": 10,
+      "day": 14
+    },
+    "tags": ["test", "blog", "develop"],
+    "article": "This is a test blog. So, there is nothing writted down."
+  },
+  {
     "title": "Test blog",
     "content": {
       "str": "This is a test blog. So, there is nothing writted down.But I decide to make it get more longer"
