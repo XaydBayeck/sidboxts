@@ -38,7 +38,7 @@ export default function Card<T extends Content>({
     return (
       <div className="tag" key={i}>
         <span className="tag-icon"></span>
-        <Link to={'/Category/' + tag} className="tag-text">{tag}</Link>
+        <Link to={'/sidboxts/Category/' + tag} className="tag-text">{tag}</Link>
       </div>
     );
   });
@@ -57,7 +57,7 @@ export default function Card<T extends Content>({
 
   return (
     <div className="card" key={tkey}>
-      <Link to={'/blog/' + title}>
+      <Link to={'/sidboxts/blog/' + title}>
         <div className="title">{title}</div>
         {imgHtml}
         <div className="content">{content.provideText()}</div>

@@ -12,10 +12,10 @@ export default function Titlebar({ children }: Props) {
             {children}
             <div className="nav-bar">
                 <nav>
-                    <NavLink to="/Home">Home</NavLink>
-                    <NavLink to="/Category">Category</NavLink>
-                    <NavLink to="/TimeLine">Time Line</NavLink>
-                    <NavLink to="/About">About</NavLink>
+                    <NavLink to="/sidboxts/Home">Home</NavLink>
+                    <NavLink to="/sidboxts/Category">Category</NavLink>
+                    <NavLink to="/sidboxts/TimeLine">Time Line</NavLink>
+                    <NavLink to="/sidboxts/About">About</NavLink>
                 </nav>
             </div>
         </div>

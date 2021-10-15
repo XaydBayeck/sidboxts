@@ -28,25 +28,25 @@ function App() {
         <Topbar></Topbar>
         <Titlebar>
           <Switch>
-            <Route exact path='/'>
+            <Route exact path='/sidboxts'>
               <HomeTitle blogName="Sid's Blog" links={links}></HomeTitle>
             </Route>
-            <Route path='/Home'>
+            <Route path='/sidboxts/Home'>
               <HomeTitle blogName="Sid's Blog" links={links}></HomeTitle>
             </Route>
-            <Route path='/blog/:title'>
+            <Route path='/sidboxts/blog/:title'>
               <ToArticleTitle />
             </Route>
           </Switch>
         </Titlebar>
         <Switch>
-          <Route exact path='/'>
+          <Route exact path='/sidboxts'>
             <Home />
           </Route>
-          <Route path='/Home'>
+          <Route path='/sidboxts/Home'>
             <Home />
           </Route>
-          <Route path='/blog/:title'>
+          <Route path='/sidboxts/blog/:title'>
             <ToBlogView />
           </Route>
         </Switch>
