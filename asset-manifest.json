@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/sidboxts/static/css/main.cd05e5a1.chunk.css",
-    "main.js": "/sidboxts/static/js/main.6c7bb6ec.chunk.js",
-    "main.js.map": "/sidboxts/static/js/main.6c7bb6ec.chunk.js.map",
+    "main.js": "/sidboxts/static/js/main.aa15aaf5.chunk.js",
+    "main.js.map": "/sidboxts/static/js/main.aa15aaf5.chunk.js.map",
     "runtime-main.js": "/sidboxts/static/js/runtime-main.b0ac5322.js",
     "runtime-main.js.map": "/sidboxts/static/js/runtime-main.b0ac5322.js.map",
     "static/js/2.37ac2e1c.chunk.js": "/sidboxts/static/js/2.37ac2e1c.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.b0ac5322.js",
     "static/js/2.37ac2e1c.chunk.js",
     "static/css/main.cd05e5a1.chunk.css",
-    "static/js/main.6c7bb6ec.chunk.js"
+    "static/js/main.aa15aaf5.chunk.js"
   ]
 }
