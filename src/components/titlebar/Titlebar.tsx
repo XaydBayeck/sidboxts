@@ -2,23 +2,13 @@ import * as React from 'react';
 import './Titlebar.css'
 
 export interface Props {
-    blogName: string,
-    links: string[],
+    children?: React.ReactNode | React.ReactNode[],
 }
 
-export default function Titlebar({ blogName, links }: Props) {
+export default function Titlebar({ children }: Props) {
     return (
         <div className="title-bar">
-            <div className="blog-name">
-                {blogName}
-            </div>
-            <div className="links">
-                <ul id="links">
-                    {links.map((item, i) => {
-                        return <li key={i.toString()}>{item}</li>
-                    })}
-                </ul>
-            </div>
+            {children}
             <div className="nav-bar">
                 <nav>
                     <a href="#">Home</a>

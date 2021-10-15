@@ -1,0 +1,27 @@
+.blog-name {
+    font-size: 4em;
+}
+
+.blog-name:hover {
+    text-shadow: peachpuff 1px 0px 10px;
+}
+
+.links > ul > li {
+    list-style: circle;
+    color: peachpuff;
+}
+
+.links > ul > li:hover {
+    list-style: disc;
+    text-shadow: peachpuff 1px 0px 10px;
+}
+
+.links > ul > li > a {
+    text-decoration: none;
+    color: peachpuff;
+}
+
+
+.links > ul > li > a:hover {
+    text-shadow: peachpuff 1px 0px 10px;
+}
