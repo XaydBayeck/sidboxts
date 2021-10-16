@@ -1,8 +1,47 @@
+
 .blog-view {
     text-align: start;
     max-width: 80%;
-    margin: 50px 25% 100px 25%;
+    margin: 50px 20% 100px 20%;
     padding: 10px 2% 20px 2%;
+}
+
+.nav-container {
+    position: fixed;
+    transform: translate(0,0);
+    right: 2%;
+    cursor: pointer;
+    color: antiquewhite;
+    font-size: .8em;
+    z-index: 1;
+}
+
+.article-container, .nav-container {
     background-color: rgba(93, 152, 175, 0.801);
     border-radius: 32px;
+    padding: 20px 5px 20px 5px;
+}
+
+.markdown > p > img {
+    width: 100%;
+}
+
+.markdown-navigation {
+    padding: 0 5px 0 5px;
+}
+
+.title-anchor {
+    border-radius: 8px;
+    padding: 0 10px 0 10px;
+    margin: 5px 0 5px 0;
+}
+
+.title-anchor:hover {
+    background-color: peachpuff;
+    color: rgba(93, 152, 175, 0.801);
+}
+
+.markdown-navigation > .active {
+    background-color: peachpuff;
+    color: rgba(93, 152, 175, 0.801);
 }
