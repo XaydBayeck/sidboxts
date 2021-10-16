@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/sidboxts/static/css/main.cd05e5a1.chunk.css",
-    "main.js": "/sidboxts/static/js/main.aa15aaf5.chunk.js",
-    "main.js.map": "/sidboxts/static/js/main.aa15aaf5.chunk.js.map",
-    "runtime-main.js": "/sidboxts/static/js/runtime-main.b0ac5322.js",
-    "runtime-main.js.map": "/sidboxts/static/js/runtime-main.b0ac5322.js.map",
-    "static/js/2.37ac2e1c.chunk.js": "/sidboxts/static/js/2.37ac2e1c.chunk.js",
-    "static/js/2.37ac2e1c.chunk.js.map": "/sidboxts/static/js/2.37ac2e1c.chunk.js.map",
-    "static/js/3.f55a9244.chunk.js": "/sidboxts/static/js/3.f55a9244.chunk.js",
-    "static/js/3.f55a9244.chunk.js.map": "/sidboxts/static/js/3.f55a9244.chunk.js.map",
+    "main.js": "/sidboxts/static/js/main.bd30d3b5.chunk.js",
+    "main.js.map": "/sidboxts/static/js/main.bd30d3b5.chunk.js.map",
+    "runtime-main.js": "/sidboxts/static/js/runtime-main.811a9860.js",
+    "runtime-main.js.map": "/sidboxts/static/js/runtime-main.811a9860.js.map",
+    "static/js/2.b2d17b1e.chunk.js": "/sidboxts/static/js/2.b2d17b1e.chunk.js",
+    "static/js/2.b2d17b1e.chunk.js.map": "/sidboxts/static/js/2.b2d17b1e.chunk.js.map",
+    "static/js/3.7e392560.chunk.js": "/sidboxts/static/js/3.7e392560.chunk.js",
+    "static/js/3.7e392560.chunk.js.map": "/sidboxts/static/js/3.7e392560.chunk.js.map",
     "index.html": "/sidboxts/index.html",
     "static/css/main.cd05e5a1.chunk.css.map": "/sidboxts/static/css/main.cd05e5a1.chunk.css.map",
-    "static/js/2.37ac2e1c.chunk.js.LICENSE.txt": "/sidboxts/static/js/2.37ac2e1c.chunk.js.LICENSE.txt"
+    "static/js/2.b2d17b1e.chunk.js.LICENSE.txt": "/sidboxts/static/js/2.b2d17b1e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.b0ac5322.js",
-    "static/js/2.37ac2e1c.chunk.js",
+    "static/js/runtime-main.811a9860.js",
+    "static/js/2.b2d17b1e.chunk.js",
     "static/css/main.cd05e5a1.chunk.css",
-    "static/js/main.aa15aaf5.chunk.js"
+    "static/js/main.bd30d3b5.chunk.js"
   ]
 }
