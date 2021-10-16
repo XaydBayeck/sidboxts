@@ -1,9 +1,11 @@
-前言：
+
+# 前言：
+
 > 想自己从零搭建一个自己的博客（从零是指不使用Hexo之类的东西直接建站），顺带学习相关的框架编码等知识。
 > 选择了Typescript + React + GitHub Pages 的方案。
 > 实际上最终目标是用rust来实现前后端，后端使用Rocket，前端使用yew.rs框架。
 
-### React + Typescript
+# React + Typescript
 根据官方文档[《React Typescript Cheatsheet》](https://react-typescript-cheatsheet.netlify.app/)在命令行中使用如下命令
 
 ```sh
@@ -18,7 +20,7 @@ npx creat-react-app name-of-app --template typescript
 也许你使用的是[《开始-React》](https://react.docschina.org/docs/getting-started.html)这里的文档,
 要注意Typescript是强类型语言，许多地方是需要标注类型的，使用类组件时尤其要注意。
 
-### GitHub Pages
+# GitHub Pages
 github可以使用GitHub Pages来生成静态网页或着单页应用（也就是说可以不用考虑后端直接部署）。
 使用GitHub Pages首先先安装[github cli](https://cli.github.com/)。我是Archlinux用户，安装方法为：
 ```sh
@@ -65,7 +67,7 @@ gh auth login
 ```
 然后就可以愉快的`push`了。
 
-#### Card
+# Card
 
 在我的`Card`组件里使用范型参数，将来放进`Card`里的不仅有博文，可能还有项目展示，其他我的网站等等。
 
@@ -74,4 +76,4 @@ gh auth login
 
 这是目前为止的效果：
 
-![图呢](/home/sid/Downloads/Sid'sBlog.png)
+![图呢](/sidboxts/markdown/Sid'sBlog.png)
