@@ -9,7 +9,6 @@ export interface Props {
 export default function Titlebar({ children }: Props) {
     return (
         <div className="title-bar">
-            {children}
             <div className="nav-bar">
                 <nav>
                     <NavLink to="/sidboxts/Home">Home</NavLink>
@@ -18,6 +17,7 @@ export default function Titlebar({ children }: Props) {
                     <NavLink to="/sidboxts/About">About</NavLink>
                 </nav>
             </div>
+            {children}
         </div>
     );
 }
